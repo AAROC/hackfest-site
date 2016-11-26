@@ -10,7 +10,7 @@ contributors: mario
 <strong>Continuous Integration</strong>: The hackfest provides <a href="http://ci.sci-gaia.eu:8080">Jenkins instance</a> to help you do continuous integration on your projects. You can also use <a href="https://travis-ci.com">Travis</a>.
 <h3>Project Status</h3>
 <!-- all the projects table goes here -->
-<table class="table">
+<table class="table text-center">
 <thead>
   <td>
     Name
@@ -27,6 +27,9 @@ contributors: mario
   <td>
     Platform Components
   </td>
+  <td>
+    Updates
+  </td>
 </thead>
 {% for project in site.data.cases %}
 <tr>
@@ -42,7 +45,7 @@ contributors: mario
   </td>
   <td>
     {% if project.stack %}
-    <img style="height: 1em;" src="{{ site.url }}images/stackshare.png" />
+    <a href="{{ project.stack }}"><img style="height: 1em;" src="{{ site.url }}images/stackshare.png" /></a>
     {% endif %}
   </td>
   <td>
@@ -58,6 +61,9 @@ contributors: mario
     {% else %}
     <!-- No Platform components specified -->
     {% endif %}
+  </td>
+  <td>
+    <a class="btn btn-small" href="{{site.url}}/projects/{{ project.name }}">Updates</a>
   </td>
 </tr>
 {% endfor %}
