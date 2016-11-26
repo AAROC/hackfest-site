@@ -55,11 +55,18 @@
   applications:
     - fuzzylite
 
-- name: CADD
+- name: D4PR
   repo: UNIZIK-Drug-Design-and-Informatics
   stack: https://stackshare.io/nnamdi-azikiwe-university-awka/d4pr
   members:
     - icuzochukwu
+  components:
+    - FG
+    - gLibrary
+    - OAR
+  applications:
+    - VINA
+    - GROMACS
 
 - name: ethernet
   repo:
