@@ -115,7 +115,7 @@ checklists:
 
 # This variable describes what is needed for a development environment
 dev_env_generic:
-  - name: A good editor Editor
+  - name: A good editor 
     icon: atom
     more: Ensure you have a good editor. We suggest Atom, but use whatever you're comfortable with.
     link:

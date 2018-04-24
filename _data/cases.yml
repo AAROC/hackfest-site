@@ -45,15 +45,30 @@
     - PostgreSQL
 
 - name: fuzzyfier
-  repo:
+  repo: https://github.com/princetee/defuzzifier
   stack:
   members:
+    - princetee
+  components:
+    - FG
+    - gLibrary
+  applications:
+    - fuzzylite
 
-- name: CADD
+- name: D4PR
   repo: UNIZIK-Drug-Design-and-Informatics
   stack: https://stackshare.io/nnamdi-azikiwe-university-awka/d4pr
   members:
     - icuzochukwu
+  components:
+    - FG
+    - gLibrary
+    - OAR
+  applications:
+    - AutoDock
+    - VINA
+    - GROMACS
+
 
 - name: ethernet
   repo:
@@ -103,8 +118,9 @@
 
 - name: OAU-MAT
   repo: https://github.com/trinitysege/OAU-MAT
-  stack:
+  stack: https://stackshare.io/obafemi-awolowo-university-ife/obafemi-awolowo-university-ife/
   members:
+    - trinitysege
   components:
     - oar
     - FG
